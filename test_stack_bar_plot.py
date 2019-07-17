@@ -36,3 +36,4 @@ plt.show()
 
 #%%
 
+print(df)
