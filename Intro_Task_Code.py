@@ -6,7 +6,7 @@
 import gzip, json
 
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
-oas_file = "Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz"
+#oas_file = "Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz"
 
 meta_line = True
 sequence_data = []
