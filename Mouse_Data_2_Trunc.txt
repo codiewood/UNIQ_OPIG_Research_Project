@@ -1,0 +1,364 @@
+The data we will look at is from Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz, with metadata {'Longitudinal': 'no', 'Chain': 'Heavy', 'Author': 'Corcoran et al., (2016)', 'Isotype': 'IGHG', 'Age': 'no', 'Size_igblastn': 17, 'Disease': 'None', 'Link': 'https://dx.doi.org/10.1038/ncomms13642', 'BSource': 'PBMC', 'BType': 'Unsorted-B-Cells', 'Subject': 'M2', 'Species': 'mouse_Balb/c', 'Vaccine': 'None', 'Size': 8}
+The CDR-H3 sequence which was most common was {"105": "A", "106": "R", "107": "G", "108": "P", "109": "Y", "110": "S", "111": "G", "112": "S", "113": "S", "114": "Y", "115": "F", "116": "D", "117": "Y"}, which appeared 4 times.
+For position 1, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 12.5, 'E': 87.5}.
+    
+For position 2, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 3, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 4, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 5, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 100.0}.
+    
+For position 6, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 100.0}.
+    
+For position 7, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 8, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 9, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 87.5, 'H': 12.5}.
+    
+For position 11, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 100.0}.
+    
+For position 12, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 13, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 14, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 15, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 100.0}.
+    
+For position 16, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 17, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 100.0}.
+    
+For position 18, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 19, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 20, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 100.0}.
+    
+For position 21, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'I': 100.0}.
+    
+For position 22, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 23, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'C': 100.0}.
+    
+For position 24, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 25, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 100.0}.
+    
+For position 26, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 27, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 28, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 29, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 30, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'F': 100.0}.
+    
+For position 35, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 36, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 37, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 38, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 39, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 100.0}.
+    
+For position 40, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 41, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 100.0}.
+    
+For position 42, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 43, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 44, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 100.0}.
+    
+For position 45, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 46, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'H': 100.0}.
+    
+For position 47, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 48, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 49, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 50, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 51, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 100.0}.
+    
+For position 52, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 100.0}.
+    
+For position 53, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'I': 100.0}.
+    
+For position 54, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 55, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 56, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'I': 100.0}.
+    
+For position 57, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 58, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 100.0}.
+    
+For position 59, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 62, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 63, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 64, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 65, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 66, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 12.5, 'I': 87.5}.
+    
+For position 67, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 68, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'N': 100.0}.
+    
+For position 69, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 87.5, 'N': 12.5}.
+    
+For position 70, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 71, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'F': 100.0}.
+    
+For position 72, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 74, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 75, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 76, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 100.0}.
+    
+For position 77, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 78, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 79, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 80, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 81, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 82, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 100.0}.
+    
+For position 83, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 84, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 85, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 86, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'I': 100.0}.
+    
+For position 87, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 88, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 89, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 100.0}.
+    
+For position 90, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 100.0}.
+    
+For position 91, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 92, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 100.0}.
+    
+For position 93, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 94, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 100.0}.
+    
+For position 95, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 96, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 97, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 100.0}.
+    
+For position 98, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 99, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 100, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 100.0}.
+    
+For position 101, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 102, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 103, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 104, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'C': 100.0}.
+    
+For position 105, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 100.0}.
+    
+For position 106, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 100.0}.
+    
+For position 107, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 87.5, 'S': 12.5}.
+    
+For position 108, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 100.0}.
+    
+For position 109, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 110, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 111, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 112, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 113, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 114, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 115, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'F': 100.0}.
+    
+For position 116, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 100.0}.
+    
+For position 117, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 100.0}.
+    
+For position 118, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 87.5, 'C': 12.5}.
+    
+For position 119, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 120, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 100.0}.
+    
+For position 121, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 100.0}.
+    
+For position 122, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 123, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 124, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 87.5, 'R': 12.5}.
+    
+For position 125, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 100.0}.
+    
+For position 126, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 100.0}.
+    
+For position 127, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+For position 128, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 100.0}.
+    
+The consensus sequence for this data, including sequence repeats, is:
+{'1': 'E', '2': 'V', '3': 'L', '4': 'L', '5': 'Q', '6': 'Q', '7': 'S', '8': 'G', '9': 'P', '11': 'E', '12': 'L', '13': 'V', '14': 'K', '15': 'P', '16': 'G', '17': 'A', '18': 'S', '19': 'V', '20': 'R', '21': 'I', '22': 'S', '23': 'C', '24': 'K', '25': 'A', '26': 'S', '27': 'G', '28': 'Y', '29': 'T', '30': 'F', '35': 'T', '36': 'D', '37': 'Y', '38': 'N', '39': 'M', '40': 'D', '41': 'W', '42': 'V', '43': 'K', '44': 'Q', '45': 'S', '46': 'H', '47': 'G', '48': 'K', '49': 'N', '50': 'L', '51': 'E', '52': 'W', '53': 'I', '54': 'G', '55': 'D', '56': 'I', '57': 'N', '58': 'P', '59': 'N', '62': 'N', '63': 'G', '64': 'G', '65': 'T', '66': 'I', '67': 'Y', '68': 'N', '69': 'K', '70': 'K', '71': 'F', '72': 'K', '74': 'D', '75': 'K', '76': 'A', '77': 'T', '78': 'L', '79': 'T', '80': 'V', '81': 'D', '82': 'K', '83': 'S', '84': 'S', '85': 'S', '86': 'I', '87': 'S', '88': 'Y', '89': 'M', '90': 'E', '91': 'L', '92': 'R', '93': 'S', '94': 'L', '95': 'T', '96': 'S', '97': 'E', '98': 'D', '99': 'T', '100': 'A', '101': 'V', '102': 'Y', '103': 'Y', '104': 'C', '105': 'A', '106': 'R', '107': 'G', '108': 'P', '109': 'Y', '110': 'S', '111': 'G', '112': 'S', '113': 'S', '114': 'Y', '115': 'F', '116': 'D', '117': 'Y', '118': 'W', '119': 'G', '120': 'Q', '121': 'G', '122': 'T', '123': 'T', '124': 'L', '125': 'T', '126': 'V', '127': 'S', '128': 'S'}

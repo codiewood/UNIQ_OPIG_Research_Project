@@ -1,0 +1,418 @@
+The data we will look at is from Vergani_2017_B18_age-less_than_40_IGHG_B18_age-less_than_40_iglblastn_IGHG.json.gz, with metadata {'Longitudinal': 'no', 'Chain': 'Heavy', 'Author': 'Vergani et al., (2017)', 'Isotype': 'IGHG', 'Age': '<40', 'Size_igblastn': 2348, 'Disease': 'None', 'Link': 'https://www.frontiersin.org/articles/10.3389/fimmu.2017.01157/full', 'Vaccine': 'None', 'BType': 'Unsorted-B-Cells', 'Size': 375, 'Species': 'human', 'BSource': 'PBMC', 'Subject': 'no'}
+The CDR-H3 sequence which was most common was {"105": "A", "106": "S", "107": "S", "108": "K", "109": "D", "110": "I", "111": "G", "112": "L", "112A": "E", "113": "W", "114": "Y", "115": "F", "116": "D", "117": "L"}, which appeared 20 times.
+For position 1, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 69.87, 'E': 25.87, 'Unused': 4.27}.
+    
+For position 2, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 88.53, 'L': 7.2, 'I': 1.87, 'M': 0.8, 'R': 0.27, 'Unused': 0.27, 'G': 0.53, 'A': 0.27, 'E': 0.27}.
+    
+For position 3, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 96.53, 'T': 2.13, 'H': 0.27, 'K': 0.27, 'Unused': 0.27, 'E': 0.27, 'R': 0.27}.
+    
+For position 4, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 99.47, 'V': 0.27, 'Unused': 0.27}.
+    
+For position 5, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 50.13, 'Q': 40.53, 'L': 6.4, 'K': 2.13, 'Unused': 0.27, 'T': 0.27, 'S': 0.27}.
+    
+For position 6, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 35.73, 'E': 63.47, 'Unused': 0.27, 'P': 0.53}.
+    
+For position 7, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 89.07, 'W': 10.13, 'Unused': 0.27, 'F': 0.27, 'T': 0.27}.
+    
+For position 8, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 99.47, 'Unused': 0.27, 'D': 0.27}.
+    
+For position 9, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 33.87, 'G': 31.47, 'P': 31.73, 'D': 0.27, 'S': 1.87, 'Unused': 0.27, 'V': 0.27, 'T': 0.27}.
+    
+For position 11, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 25.33, 'G': 71.73, 'T': 1.87, 'Unused': 0.27, 'D': 0.53, 'V': 0.27}.
+    
+For position 12, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 29.07, 'L': 69.6, 'M': 0.8, 'Unused': 0.27, 'S': 0.27}.
+    
+For position 13, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 25.33, 'V': 63.2, 'L': 10.13, 'I': 0.53, 'Unused': 0.27, 'Q': 0.27, 'A': 0.27}.
+    
+For position 14, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 71.47, 'Q': 27.2, 'Unused': 0.27, 'T': 0.53, 'E': 0.53}.
+    
+For position 15, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 98.13, 'T': 0.27, 'A': 0.27, 'Unused': 0.27, 'R': 0.27, 'S': 0.8}.
+    
+For position 16, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 57.07, 'S': 40.53, 'T': 2.13, 'Unused': 0.27}.
+    
+For position 17, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 19.73, 'R': 12.53, 'Q': 13.07, 'E': 31.2, 'G': 20.53, 'S': 1.87, 'T': 0.53, 'P': 0.27, 'Unused': 0.27}.
+    
+For position 18, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 57.07, 'T': 42.67, 'Unused': 0.27}.
+    
+For position 19, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 17.87, 'L': 77.33, 'I': 4.27, 'M': 0.27, 'Unused': 0.27}.
+    
+For position 20, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 25.07, 'R': 31.73, 'S': 40.27, 'T': 2.13, 'Q': 0.27, 'F': 0.27, 'Unused': 0.27}.
+    
+For position 21, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 22.67, 'L': 74.13, 'I': 3.2}.
+    
+For position 22, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 57.07, 'T': 42.67, 'P': 0.27}.
+    
+For position 23, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'C': 100.0}.
+    
+For position 24, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 25.33, 'I': 0.27, 'T': 26.93, 'A': 42.67, 'S': 3.47, 'V': 0.53, 'E': 0.27, 'R': 0.53}.
+    
+For position 25, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 43.2, 'A': 50.13, 'G': 3.2, 'I': 0.53, 'F': 1.87, 'T': 1.07}.
+    
+For position 26, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 89.07, 'G': 0.27, 'Y': 10.4, 'P': 0.27}.
+    
+For position 27, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 98.4, 'Q': 0.27, 'R': 0.8, 'A': 0.27, 'V': 0.27}.
+    
+For position 28, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 18.13, 'F': 33.6, 'G': 40.8, 'D': 1.33, 'Q': 4.8, 'S': 0.27, 'L': 0.53, 'V': 0.27, 'A': 0.27}.
+    
+For position 29, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 52.8, 'S': 43.47, 'I': 2.13, 'N': 0.27, 'P': 0.8, 'D': 0.27, 'A': 0.27}.
+    
+For position 30, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 4.8, 'F': 63.2, 'I': 29.6, 'V': 2.13, 'S': 0.27}.
+    
+For position 31, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 80.27, 'S': 18.93, 'G': 0.27, 'R': 0.27, 'A': 0.27}.
+    
+For position 34, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 81.87, 'S': 16.0, 'T': 1.87, 'N': 0.27}.
+    
+For position 35, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 28.0, 'G': 10.67, 'S': 49.07, 'D': 6.93, 'N': 1.33, 'R': 0.8, 'I': 2.4, 'H': 0.27, 'A': 0.53}.
+    
+For position 36, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 2.13, 'D': 20.0, 'G': 20.27, 'S': 41.07, 'R': 0.8, 'N': 12.0, 'Y': 0.53, 'K': 0.53, 'T': 1.6, 'A': 0.8, 'C': 0.27}.
+    
+For position 37, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 2.13, 'Y': 82.13, 'H': 4.27, 'A': 0.8, 'V': 2.13, 'N': 2.93, 'F': 1.6, 'S': 2.93, 'R': 0.27, 'C': 0.27, 'Q': 0.27, 'M': 0.27}.
+    
+For position 38, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 7.73, 'P': 0.27, 'Y': 50.4, 'A': 18.67, 'G': 12.53, 'W': 6.93, 'N': 0.27, 'I': 0.27, 'D': 0.53, 'T': 1.33, 'C': 0.27, 'V': 0.27, 'E': 0.27, 'F': 0.27}.
+    
+For position 39, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 37.87, 'W': 40.27, 'I': 17.87, 'V': 2.4, 'L': 1.07, 'G': 0.27, 'F': 0.27}.
+    
+For position 40, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'H': 23.73, 'S': 55.73, 'G': 10.4, 'N': 6.67, 'I': 0.27, 'Y': 0.27, 'A': 0.53, 'Q': 0.8, 'T': 1.33, 'D': 0.27}.
+    
+For position 41, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 99.73, 'C': 0.27}.
+    
+For position 42, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 51.73, 'F': 3.2, 'I': 44.8, 'L': 0.27}.
+    
+For position 43, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 100.0}.
+    
+For position 44, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 93.6, 'K': 0.27, 'P': 0.53, 'E': 4.8, 'R': 0.8}.
+    
+For position 45, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 53.33, 'H': 3.47, 'P': 38.4, 'M': 3.2, 'S': 1.07, 'I': 0.27, 'L': 0.27}.
+    
+For position 46, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 90.13, 'A': 3.73, 'T': 0.8, 'R': 5.33}.
+    
+For position 47, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 98.93, 'S': 0.53, 'E': 0.53}.
+    
+For position 48, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 78.93, 'Q': 19.73, 'G': 0.27, 'N': 0.53, 'L': 0.27, 'R': 0.27}.
+    
+For position 49, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 87.73, 'R': 1.07, 'A': 2.4, 'E': 8.8}.
+    
+For position 50, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 99.73, 'P': 0.27}.
+    
+For position 51, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 98.4, 'H': 0.27, 'G': 0.27, 'V': 0.8, 'D': 0.27}.
+    
+For position 52, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 99.2, 'Y': 0.53, 'S': 0.27}.
+    
+For position 53, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 24.27, 'V': 31.2, 'I': 40.8, 'L': 3.73}.
+    
+For position 54, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 69.87, 'S': 21.33, 'A': 8.27, 'L': 0.27, 'T': 0.27}.
+    
+For position 55, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 10.4, 'F': 4.53, 'Y': 24.8, 'S': 6.93, 'A': 5.07, 'W': 17.07, 'I': 4.53, 'R': 7.2, 'T': 1.33, 'N': 1.07, 'L': 2.67, 'V': 2.4, 'E': 10.67, 'C': 0.27, 'D': 0.53, 'K': 0.27, 'H': 0.27}.
+    
+For position 56, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'F': 2.4, 'I': 89.87, 'S': 5.33, 'T': 0.8, 'V': 0.8, 'M': 0.53, 'L': 0.27}.
+    
+For position 57, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 2.67, 'R': 4.8, 'Y': 26.4, 'S': 28.0, 'N': 31.2, 'G': 0.27, 'K': 1.07, 'T': 0.27, 'V': 0.53, 'W': 1.6, 'I': 1.6, 'P': 0.27, 'L': 0.27, 'E': 0.27, 'F': 0.53, 'C': 0.27}.
+    
+For position 58, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 18.13, 'S': 12.0, 'Y': 17.87, 'G': 5.87, 'A': 6.93, 'T': 4.27, 'W': 8.8, 'Unused': 0.27, 'Q': 1.07, 'H': 22.67, 'V': 0.53, 'F': 0.53, 'N': 0.27, 'R': 0.53, 'L': 0.27}.
+    
+For position 59, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 4.53, 'K': 7.2, 'S': 52.53, 'N': 11.47, 'D': 7.73, 'Y': 7.2, 'A': 0.8, 'G': 5.87, 'Unused': 0.27, 'R': 0.53, 'F': 0.53, 'V': 0.27, 'I': 0.8, 'H': 0.27}.
+    
+For position 60, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 95.47, 'P': 0.27, 'A': 1.33, 'S': 0.53, 'V': 2.13, 'T': 0.27}.
+    
+For position 61, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 96.0, 'Y': 1.33, 'N': 2.4, 'D': 0.27}.
+    
+For position 62, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 5.07, 'G': 21.33, 'Unused': 43.2, 'N': 8.27, 'S': 18.67, 'K': 0.8, 'T': 0.27, 'Y': 0.27, 'L': 1.6, 'E': 0.27, 'F': 0.27}.
+    
+For position 63, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 79.47, 'K': 0.27, 'S': 13.87, 'Unused': 0.27, 'W': 0.53, 'E': 0.53, 'D': 2.4, 'N': 0.53, 'R': 0.27, 'I': 0.27, 'Y': 0.27, 'T': 0.53, 'F': 0.27, 'P': 0.27, 'A': 0.27}.
+    
+For position 64, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 3.47, 'T': 9.87, 'I': 1.07, 'S': 45.87, 'N': 16.8, 'D': 10.13, 'R': 0.27, 'G': 3.2, 'Y': 4.0, 'H': 0.8, 'K': 3.73, 'L': 0.27, 'A': 0.27, 'V': 0.27}.
+    
+For position 65, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 73.87, 'I': 15.2, 'K': 7.2, 'N': 0.53, 'P': 0.8, 'Q': 0.53, 'A': 1.07, 'G': 0.27, 'V': 0.27, 'R': 0.27}.
+    
+For position 66, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'I': 2.4, 'E': 1.87, 'Y': 30.93, 'N': 37.6, 'R': 5.33, 'G': 6.93, 'K': 6.4, 'D': 1.87, 'S': 2.4, 'F': 0.8, 'V': 2.13, 'T': 0.8, 'H': 0.53}.
+    
+For position 67, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 98.67, 'F': 0.8, 'S': 0.53}.
+    
+For position 68, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 51.2, 'N': 39.73, 'S': 6.13, 'R': 0.53, 'G': 0.27, 'V': 1.33, 'E': 0.27, 'T': 0.27, 'P': 0.27}.
+    
+For position 69, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 21.07, 'A': 4.27, 'P': 45.33, 'D': 26.93, 'V': 0.53, 'H': 0.27, 'E': 1.07, 'N': 0.27, 'T': 0.27}.
+    
+For position 70, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'K': 21.6, 'S': 75.73, 'N': 0.27, 'A': 1.07, 'F': 0.27, 'I': 0.27, 'P': 0.53, 'R': 0.27}.
+    
+For position 71, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'F': 20.0, 'V': 32.0, 'L': 47.2, 'M': 0.53, 'H': 0.27}.
+    
+For position 72, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 24.8, 'K': 73.33, 'L': 0.27, 'E': 0.27, 'R': 0.8, 'N': 0.27, 'H': 0.27}.
+    
+For position 74, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 55.2, 'S': 42.13, 'D': 1.33, 'R': 0.27, 'A': 0.53, 'E': 0.27, 'T': 0.27}.
+    
+For position 75, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 96.0, 'Q': 3.47, 'H': 0.27, 'L': 0.27}.
+    
+For position 76, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 64.0, 'F': 31.2, 'L': 3.2, 'I': 1.33, 'Y': 0.27}.
+    
+For position 77, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 86.93, 'A': 10.93, 'I': 0.53, 'S': 0.8, 'P': 0.27, 'N': 0.27, 'V': 0.27}.
+    
+For position 78, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 14.13, 'I': 77.6, 'T': 0.27, 'L': 6.4, 'S': 0.53, 'V': 0.8, 'F': 0.27}.
+    
+For position 79, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 24.27, 'S': 74.4, 'N': 0.53, 'A': 0.8}.
+    
+For position 80, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 2.13, 'R': 37.07, 'V': 36.27, 'T': 7.2, 'A': 4.8, 'P': 0.53, 'K': 2.4, 'I': 5.07, 'L': 3.73, 'S': 0.53, 'M': 0.27}.
+    
+For position 81, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 97.07, 'N': 1.07, 'E': 1.33, 'G': 0.27, 'A': 0.27}.
+    
+For position 82, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 54.4, 'D': 4.0, 'N': 26.4, 'S': 0.27, 'K': 5.6, 'R': 2.67, 'M': 5.6, 'P': 0.53, 'E': 0.53}.
+    
+For position 83, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 83.47, 'A': 15.47, 'T': 0.53, 'P': 0.27, 'Y': 0.27}.
+    
+For position 84, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 12.27, 'K': 70.93, 'R': 1.07, 'I': 10.93, 'A': 1.33, 'M': 0.53, 'F': 0.27, 'S': 0.8, 'E': 0.8, 'Q': 0.53, 'N': 0.53}.
+    
+For position 85, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 2.13, 'S': 20.53, 'N': 70.67, 'G': 0.27, 'K': 4.53, 'R': 0.53, 'T': 1.07, 'Y': 0.27}.
+    
+For position 86, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 37.87, 'I': 3.47, 'H': 11.47, 'Q': 30.13, 'S': 15.47, 'R': 0.27, 'M': 0.27, 'K': 0.53, 'L': 0.27, 'N': 0.27}.
+    
+For position 87, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 27.73, 'F': 38.93, 'L': 28.53, 'V': 3.2, 'G': 0.27, 'S': 0.53, 'C': 0.53, 'D': 0.27}.
+    
+For position 88, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 56.27, 'S': 40.0, 'F': 1.33, 'V': 2.13, 'N': 0.27}.
+    
+For position 89, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 22.13, 'L': 77.33, 'R': 0.53}.
+    
+For position 90, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 22.13, 'Q': 35.2, 'K': 38.13, 'D': 0.53, 'T': 2.4, 'R': 1.07, 'N': 0.27, 'S': 0.27}.
+    
+For position 91, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 62.4, 'M': 33.33, 'W': 3.73, 'V': 0.27, 'R': 0.27}.
+    
+For position 92, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 9.07, 'N': 29.6, 'S': 52.0, 'T': 8.0, 'H': 0.27, 'D': 0.27, 'G': 0.53, 'I': 0.27}.
+    
+For position 93, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 93.33, 'R': 2.93, 'N': 2.67, 'I': 0.27, 'G': 0.53, 'T': 0.27}.
+    
+For position 94, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 57.07, 'V': 40.27, 'M': 2.13, 'P': 0.27, 'R': 0.27}.
+    
+For position 95, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 43.47, 'K': 12.27, 'T': 41.6, 'D': 2.13, 'Q': 0.27, 'V': 0.27}.
+    
+For position 96, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 21.87, 'T': 4.27, 'A': 62.4, 'E': 0.27, 'P': 8.53, 'D': 0.27, 'L': 0.53, 'V': 1.6, 'G': 0.27}.
+    
+For position 97, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 17.07, 'E': 31.73, 'A': 39.73, 'S': 3.2, 'G': 5.87, 'V': 2.13, 'T': 0.27}.
+    
+For position 98, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 99.2, 'E': 0.27, 'A': 0.27, 'N': 0.27}.
+    
+For position 99, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 98.93, 'S': 0.53, 'M': 0.27, 'A': 0.27}.
+    
+For position 100, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 99.2, 'T': 0.27, 'G': 0.53}.
+    
+For position 101, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 81.33, 'I': 1.33, 'M': 2.93, 'L': 6.13, 'F': 5.6, 'T': 2.67}.
+    
+For position 102, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 98.67, 'C': 0.27, 'D': 0.53, 'W': 0.27, 'E': 0.27}.
+    
+For position 103, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 92.53, 'F': 6.93, 'T': 0.27, 'H': 0.27}.
+    
+For position 104, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'C': 98.67, 'R': 0.27, 'S': 0.27, 'V': 0.27, 'G': 0.27, 'W': 0.27}.
+    
+For position 105, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 7.73, 'A': 90.67, 'Q': 0.27, 'G': 0.27, 'V': 0.53, 'S': 0.27, 'R': 0.27}.
+    
+For position 106, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'R': 48.27, 'S': 26.4, 'M': 0.27, 'K': 14.4, 'G': 3.73, 'H': 1.87, 'T': 3.47, 'A': 0.8, 'L': 0.27, 'Q': 0.27, 'P': 0.27}.
+    
+For position 107, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'A': 8.0, 'S': 16.0, 'E': 5.33, 'R': 2.67, 'I': 2.13, 'D': 25.87, 'Q': 8.27, 'P': 5.6, 'G': 10.13, 'T': 1.33, 'Y': 1.33, 'M': 0.8, 'L': 1.6, 'W': 1.07, 'V': 8.0, 'F': 0.8, 'H': 0.8, 'C': 0.27}.
+    
+For position 108, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 8.8, 'A': 3.47, 'K': 15.73, 'G': 12.27, 'Y': 3.73, 'T': 1.87, 'P': 6.13, 'S': 9.33, 'R': 12.0, 'E': 1.07, 'N': 1.33, 'C': 6.13, 'I': 6.93, 'F': 1.6, 'V': 4.0, 'H': 1.33, 'D': 1.6, 'Q': 1.07, 'Unused': 0.27, 'W': 0.53, 'M': 0.8}.
+    
+For position 109, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 6.67, 'L': 1.87, 'D': 16.27, 'C': 1.6, 'G': 20.0, 'W': 1.33, 'S': 5.6, 'V': 12.27, 'T': 1.87, 'R': 9.6, 'A': 2.4, 'E': 3.47, 'P': 4.53, 'Q': 2.67, 'F': 1.87, 'H': 0.53, 'N': 1.6, 'Unused': 3.2, 'I': 1.87, 'K': 0.8}.
+    
+For position 110, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 5.87, 'I': 14.67, 'D': 6.93, 'S': 4.27, 'E': 1.07, 'Y': 6.13, 'G': 22.4, 'P': 4.53, 'V': 3.47, 'T': 3.47, 'R': 2.13, 'A': 1.33, 'W': 2.4, 'F': 2.67, 'L': 3.73, 'K': 0.53, 'Unused': 5.87, 'N': 5.87, 'M': 1.33, 'C': 0.8, 'H': 0.53}.
+    
+For position 111, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'L': 5.33, 'G': 27.73, 'F': 1.6, 'S': 5.07, 'Unused': 15.73, 'P': 3.47, 'Y': 9.33, 'V': 2.67, 'T': 4.0, 'D': 3.47, 'A': 8.0, 'K': 0.53, 'W': 1.33, 'H': 0.53, 'E': 5.87, 'I': 0.8, 'R': 1.87, 'M': 0.27, 'N': 0.27, 'C': 1.33, 'Q': 0.8}.
+    
+For position 111A, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'P': 4.0, 'W': 1.33, 'Unused': 43.2, 'T': 2.67, 'Y': 3.73, 'F': 2.4, 'S': 17.07, 'V': 2.93, 'R': 1.6, 'D': 2.93, 'G': 3.47, 'I': 0.8, 'C': 5.33, 'A': 6.4, 'L': 1.07, 'E': 0.27, 'K': 0.53, 'Q': 0.27}.
+    
+For position 111B, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 6.4, 'Unused': 58.4, 'S': 9.07, 'D': 0.8, 'Y': 4.27, 'A': 1.07, 'T': 2.67, 'C': 6.13, 'Q': 0.27, 'F': 1.07, 'P': 0.8, 'L': 5.33, 'I': 0.8, 'W': 1.87, 'V': 0.27, 'N': 0.53, 'E': 0.27}.
+    
+For position 111C, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 78.93, 'Y': 0.8, 'W': 0.53, 'H': 0.27, 'D': 1.33, 'I': 0.53, 'G': 6.13, 'S': 2.4, 'L': 0.53, 'A': 0.27, 'P': 5.07, 'C': 0.53, 'V': 0.27, 'N': 0.53, 'R': 0.8, 'F': 0.27, 'T': 0.8}.
+    
+For position 111D, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 93.87, 'V': 0.27, 'S': 2.13, 'W': 0.53, 'Y': 0.53, 'E': 0.27, 'T': 0.27, 'A': 0.27, 'F': 0.53, 'I': 0.27, 'G': 0.53, 'P': 0.53}.
+    
+For position 111E, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 98.4, 'G': 0.27, 'W': 0.53, 'S': 0.27, 'T': 0.27, 'C': 0.27}.
+    
+For position 111F, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 98.67, 'S': 1.07, 'G': 0.27}.
+    
+For position 111G, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 99.47, 'G': 0.53}.
+    
+For position 112, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 13.33, 'P': 9.07, 'L': 14.93, 'G': 6.93, 'R': 2.93, 'S': 14.93, 'E': 1.07, 'A': 2.67, 'V': 5.6, 'T': 1.87, 'I': 1.07, 'Unused': 10.67, 'N': 3.2, 'W': 1.07, 'D': 1.87, 'Q': 1.33, 'F': 5.33, 'C': 1.33, 'H': 0.53, 'K': 0.27}.
+    
+For position 112A, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 26.93, 'P': 2.4, 'E': 13.87, 'G': 4.8, 'C': 0.8, 'Unused': 20.8, 'V': 4.53, 'D': 2.13, 'R': 2.67, 'S': 3.47, 'T': 1.87, 'A': 3.73, 'Q': 6.4, 'I': 1.07, 'N': 1.07, 'K': 1.07, 'W': 1.07, 'M': 0.27, 'L': 0.53, 'F': 0.53}.
+    
+For position 112B, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 3.73, 'Unused': 46.4, 'Q': 0.53, 'S': 4.53, 'K': 0.8, 'N': 0.8, 'W': 1.87, 'G': 15.47, 'M': 0.27, 'V': 1.87, 'C': 5.87, 'T': 1.33, 'F': 5.33, 'H': 0.53, 'Y': 4.27, 'L': 1.07, 'P': 1.33, 'E': 1.33, 'A': 1.33, 'R': 0.8, 'I': 0.53}.
+    
+For position 112C, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'E': 3.73, 'Unused': 65.07, 'Q': 0.53, 'L': 1.6, 'F': 0.53, 'Y': 8.0, 'T': 0.27, 'S': 2.67, 'G': 1.87, 'A': 1.07, 'H': 0.53, 'W': 1.07, 'R': 5.07, 'P': 0.8, 'V': 6.4, 'D': 0.27, 'I': 0.27, 'K': 0.27}.
+    
+For position 112D, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 81.87, 'G': 10.4, 'W': 0.27, 'S': 1.33, 'T': 0.8, 'D': 0.27, 'R': 1.07, 'P': 0.53, 'K': 0.53, 'V': 0.8, 'N': 0.27, 'L': 0.27, 'C': 0.8, 'E': 0.27, 'Y': 0.53}.
+    
+For position 112E, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 96.8, 'G': 0.8, 'Y': 0.27, 'P': 0.53, 'F': 0.27, 'S': 0.27, 'A': 0.8, 'C': 0.27}.
+    
+For position 112F, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 98.67, 'R': 0.27, 'L': 0.27, 'Y': 0.27, 'G': 0.27, 'S': 0.27}.
+    
+For position 112G, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Unused': 98.93, 'Y': 0.53, 'K': 0.27, 'G': 0.27}.
+    
+For position 113, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Y': 23.47, 'G': 12.27, 'W': 14.4, 'V': 1.07, 'A': 2.67, 'L': 2.13, 'E': 0.8, 'H': 0.8, 'C': 1.33, 'R': 2.13, 'D': 10.93, 'S': 7.73, 'N': 6.4, 'F': 0.53, 'T': 2.13, 'I': 1.07, 'Q': 0.8, 'Unused': 4.0, 'K': 1.07, 'P': 3.47, 'M': 0.8}.
+    
+For position 114, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 21.07, 'D': 3.2, 'Y': 23.73, 'R': 1.33, 'N': 0.53, 'A': 26.4, 'E': 1.07, 'P': 2.93, 'W': 8.0, 'T': 2.4, 'L': 0.27, 'S': 1.33, 'H': 1.6, 'C': 0.8, 'Unused': 2.4, 'I': 0.8, 'V': 0.8, 'F': 1.07, 'M': 0.27}.
+    
+For position 115, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'M': 14.13, 'F': 54.13, 'L': 17.07, 'I': 4.53, 'A': 0.8, 'P': 1.6, 'V': 2.13, 'H': 0.53, 'Y': 1.33, 'D': 0.53, 'G': 0.53, 'S': 0.53, 'W': 0.8, 'E': 0.27, 'N': 0.53, 'K': 0.27, 'C': 0.27}.
+    
+For position 116, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'D': 85.33, 'R': 0.27, 'N': 1.07, 'G': 2.4, 'H': 6.4, 'V': 0.53, 'T': 1.87, 'Q': 0.8, 'P': 0.27, 'Y': 0.53, 'A': 0.27, 'S': 0.27}.
+    
+For position 117, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 27.73, 'Y': 25.6, 'L': 13.33, 'P': 10.4, 'I': 17.33, 'F': 1.33, 'N': 0.53, 'T': 0.27, 'S': 0.53, 'D': 1.33, 'H': 1.07, 'R': 0.27, 'C': 0.27}.
+    
+For position 118, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'W': 99.47, 'G': 0.53}.
+    
+For position 119, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 98.93, 'D': 0.27, 'C': 0.8}.
+    
+For position 120, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'Q': 79.73, 'R': 13.87, 'K': 5.87, 'E': 0.53}.
+    
+For position 121, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'G': 99.47, 'E': 0.53}.
+    
+For position 122, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 98.13, 'N': 0.27, 'A': 1.07, 'S': 0.27, 'V': 0.27}.
+    
+For position 123, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 27.47, 'L': 54.4, 'M': 15.73, 'P': 0.8, 'V': 0.53, 'Q': 0.53, 'R': 0.53}.
+    
+For position 124, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 99.73, 'G': 0.27}.
+    
+For position 125, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'T': 98.67, 'S': 0.27, 'I': 0.8, 'A': 0.27}.
+    
+For position 126, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'V': 99.47, 'I': 0.27, 'G': 0.27}.
+    
+For position 127, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 97.6, 'A': 2.4}.
+    
+For position 128, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
+    {'S': 98.4, 'P': 1.6}.
+    
+The consensus sequence for this data, including sequence repeats, is:
+{'1': 'Q', '2': 'V', '3': 'Q', '4': 'L', '5': 'V', '6': 'E', '7': 'S', '8': 'G', '9': 'A', '11': 'G', '12': 'L', '13': 'V', '14': 'K', '15': 'P', '16': 'G', '17': 'E', '18': 'S', '19': 'L', '20': 'S', '21': 'L', '22': 'S', '23': 'C', '24': 'A', '25': 'A', '26': 'S', '27': 'G', '28': 'G', '29': 'T', '30': 'F', '31': 'Unused', '34': 'Unused', '35': 'S', '36': 'S', '37': 'Y', '38': 'Y', '39': 'W', '40': 'S', '41': 'W', '42': 'V', '43': 'R', '44': 'Q', '45': 'A', '46': 'P', '47': 'G', '48': 'K', '49': 'G', '50': 'L', '51': 'E', '52': 'W', '53': 'I', '54': 'G', '55': 'Y', '56': 'I', '57': 'N', '58': 'H', '59': 'S', '60': 'Unused', '61': 'Unused', '62': 'Unused', '63': 'G', '64': 'S', '65': 'T', '66': 'N', '67': 'Y', '68': 'A', '69': 'P', '70': 'S', '71': 'L', '72': 'K', '74': 'G', '75': 'R', '76': 'V', '77': 'T', '78': 'I', '79': 'S', '80': 'R', '81': 'D', '82': 'T', '83': 'S', '84': 'K', '85': 'N', '86': 'T', '87': 'F', '88': 'Y', '89': 'L', '90': 'K', '91': 'L', '92': 'S', '93': 'S', '94': 'L', '95': 'R', '96': 'A', '97': 'A', '98': 'D', '99': 'T', '100': 'A', '101': 'V', '102': 'Y', '103': 'Y', '104': 'C', '105': 'A', '106': 'R', '107': 'D', '108': 'K', '109': 'G', '110': 'G', '111': 'G', '111A': 'Unused', '111B': 'Unused', '111C': 'Unused', '111D': 'Unused', '111E': 'Unused', '111F': 'Unused', '111G': 'Unused', '112': 'L', '112A': 'Y', '112B': 'Unused', '112C': 'Unused', '112D': 'Unused', '112E': 'Unused', '112F': 'Unused', '112G': 'Unused', '113': 'Y', '114': 'A', '115': 'F', '116': 'D', '117': 'V', '118': 'W', '119': 'G', '120': 'Q', '121': 'G', '122': 'T', '123': 'L', '124': 'V', '125': 'T', '126': 'V', '127': 'S', '128': 'S'}

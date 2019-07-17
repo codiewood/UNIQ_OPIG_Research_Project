@@ -118,6 +118,3 @@ for position in position_list:
 print("""The consensus sequence for this data, including sequence repeats, is:
 {}""".format(consensus_sequence))
 
-
-# In[ ]:
-
