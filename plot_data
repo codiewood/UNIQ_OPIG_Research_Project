@@ -7,8 +7,9 @@ import gzip, json, re, sys
 from collections import Counter
 import pandas as pd
 
-oas_file = str(sys.argv[1])
+#oas_file = str(sys.argv[1])
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
+oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
 
 meta_line = True
 sequence_data = []
@@ -74,7 +75,7 @@ def generate_positions():
 
 position_list = generate_positions()
 
-def amino_acid_percent(position):
+def amino_acid_percents(position):
     amino_acids = find_amino_acids(position)
     amino_acid_count = Counter(amino_acids)
     for amino_acid in amino_acid_count:
@@ -83,24 +84,19 @@ def amino_acid_percent(position):
     amino_acid_frequency = dict(amino_acid_count)
     return amino_acid_frequency
 
-for position in position_list:
-    amino_acid_frequency = Counter(amino_acid_percent(position))
-    top_3 = amino_acid_frequency.most_common(3)
-    df = pd.DataFrame.from_records(top_3)
-    # plot
-    barWidth = 0.85
-    names = ('A','B','C','D','E') #will be 'data set'
-    # Create green Bars
-    plt.bar(r, greenBars, color='#b5ffb9', edgecolor='white', width=barWidth)
-    # Create orange Bars
-    plt.bar(r, orangeBars, bottom=greenBars, color='#f9bc86', edgecolor='white', width=barWidth)
-    # Create blue Bars
-    plt.bar(r, blueBars, bottom=[i+j for i,j in zip(greenBars, orangeBars)], color='#a3acff', edgecolor='white', width=barWidth)
- 
-# Custom x axis
-plt.xticks(r, names)
-plt.xlabel("group")
- 
-# Show graphic
-plt.show()
+amino_acid_list = ['A','G','I','L','P','V','F','W','Y','D','E','S','T','R','H','K','C','M','N','Q','Unused']
+raw_data = {}
+for amino_acid in amino_acid_list:
+    print("adding {}".format(amino_acid))
+    raw_data[amino_acid] = []
+    for position in position_list:
+        amino_acid_frequency = amino_acid_percents(position)
+        if amino_acid in amino_acid_frequency:
+            print("{} is there!".format(amino_acid))
+            raw_data[amino_acid].append(amino_acid_frequency[amino_acid])
+        else:
+            print("{} isn't there!".format(amino_acid))
+            raw_data[amino_acid].append(0)
 
+df = pd.DataFrame(raw_data)
+df.plot(kind="bar", stacked=True)

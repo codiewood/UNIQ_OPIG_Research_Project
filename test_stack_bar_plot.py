@@ -17,6 +17,7 @@ greenBars = [i / j * 100 for i,j in zip(df['greenBars'], totals)]
 orangeBars = [i / j * 100 for i,j in zip(df['orangeBars'], totals)]
 blueBars = [i / j * 100 for i,j in zip(df['blueBars'], totals)]
  
+#%%
 # plot
 barWidth = 0.85
 names = ('A','B','C','D','E') #will be 'data set'
@@ -36,4 +37,8 @@ plt.show()
 
 #%%
 
+
+
 print(df)
+
+df.plot(kind="bar", stacked=True)
