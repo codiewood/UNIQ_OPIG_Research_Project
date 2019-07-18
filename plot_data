@@ -87,15 +87,12 @@ def amino_acid_percents(position):
 amino_acid_list = ['A','G','I','L','P','V','F','W','Y','D','E','S','T','R','H','K','C','M','N','Q','Unused']
 raw_data = {}
 for amino_acid in amino_acid_list:
-    print("adding {}".format(amino_acid))
     raw_data[amino_acid] = []
     for position in position_list:
         amino_acid_frequency = amino_acid_percents(position)
         if amino_acid in amino_acid_frequency:
-            print("{} is there!".format(amino_acid))
             raw_data[amino_acid].append(amino_acid_frequency[amino_acid])
         else:
-            print("{} isn't there!".format(amino_acid))
             raw_data[amino_acid].append(0)
 
 df = pd.DataFrame(raw_data)
