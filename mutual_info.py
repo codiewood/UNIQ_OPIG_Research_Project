@@ -1,12 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-import gzip, json, re, sys
+import gzip, json, re, sys, math, os
 from collections import Counter
 
 oas_file = str(sys.argv[1])
+#oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
+#oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
+position1 = str(sys.argv[2])
+position2 = str(sys.argv[3])
 
 meta_line = True
 sequence_data = []
@@ -24,12 +23,6 @@ for line in gzip.open(oas_file, 'rb'):
     d = json.loads(basic_data['data'])
     sequence_data[-1]['data'] = d
     
-print("The data we will look at is from {}, with metadata {}".format(oas_file,metadata))
-print("""
-      ==================
-      """)
-#%%
-
 def maximum_valued_key(dictionary):
     values = list(dictionary.values())
     keys = list(dictionary.keys())
@@ -40,39 +33,11 @@ def sort_alphanumerically(l):
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
     return sorted(l, key = alphanum_key)
 
-# In[5]:
-
-def cdrh3_sequences():
-    cdrh3_sequences = []
-    for data in sequence_data:
-        cdrh3 = data['data']['cdrh3']
-        cdrh3_sequences.append(cdrh3)
-    return cdrh3_sequences
-
-def cdrh3_sequence_counter(cdrh3_sequences):
-    cdrh3_sequence_count = {}
-    for cdrh3 in cdrh3_sequences:
-        key = json.dumps(cdrh3, sort_keys=True)
-        if key in cdrh3_sequence_count:
-            cdrh3_sequence_count[key] += 1
-        else:
-            cdrh3_sequence_count[key] = 1
-    return cdrh3_sequence_count
-
-cdrh3_sequence_count = cdrh3_sequence_counter(cdrh3_sequences())
-most_common = maximum_valued_key(cdrh3_sequence_count)
-occurences = cdrh3_sequence_count[most_common]
-
-print("The CDR-H3 sequence which was most common was {}, which appeared {} times.".format(most_common,occurences))
-print("""
-      ==================
-      """)    
-# In[7]:
-
 redundant_sequences = metadata['Size']
+regions = ['fwh1','cdrh1','fwh2','cdrh2','fwh3','cdrh3','fwh4']
+amino_acid_list = ['A','G','I','L','P','V','F','W','Y','D','E','S','T','R','H','K','C','M','N','Q','Unused']
 
 def combine_regions(data):
-    regions = ['fwh1','cdrh1','fwh2','cdrh2','fwh3','cdrh3','fwh4']
     combined_sequence = {}
     for region_name in regions:
         region_sequence = data['data'][region_name]
@@ -88,7 +53,7 @@ def find_amino_acids(position):
                 amino_acids.append(full_sequence[position])
             else:
                 amino_acids.append('Unused')
-    return amino_acids 
+    return amino_acids
 
 def generate_positions():
     all_positions = set()
@@ -98,7 +63,7 @@ def generate_positions():
         for position in positions_used:
             all_positions.add(position)
     position_list = sort_alphanumerically(list(all_positions))
-    return position_list #list of all possible positions in order of occurence
+    return position_list 
 
 position_list = generate_positions()
 
@@ -111,17 +76,45 @@ def amino_acid_percent(position):
     amino_acid_frequency = dict(amino_acid_count)
     return amino_acid_frequency
 
-for position in position_list:
-    print("""For position {}, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
-    {}.
-    """.format(position,amino_acid_percent(position)))
+def probability(position,amino_acid):
+    amino_acid_frequency = amino_acid_percent(position)
+    if amino_acid in amino_acid_frequency:
+        prob = amino_acid_percent(position)[amino_acid]/100
+    else:
+        prob = 0
+    return prob
 
-consensus_sequence = {}
-for position in position_list:
-    consensus_sequence[position] = maximum_valued_key(amino_acid_percent(position))
-print("""
-      ==================
-      """)
-print("""The consensus sequence for this data, including sequence repeats, is:
-{}""".format(consensus_sequence))
+def conditional_probability(X,x,Y,y): #prob that X=x given Y=y; X,Y positions and x,y amino acids
+    condition = 0
+    both = 0
+    for data in sequence_data:
+        full_sequence = combine_regions(data)
+        if Y in full_sequence:
+            if full_sequence[Y] == y:
+                condition += 1
+                if full_sequence[X] == x:
+                    both += 1
+    if condition == 0:
+        cond_prob = 0
+    else:
+        cond_prob = both/condition
+    return cond_prob
+            
+def joint_probability(X,x,Y,y):
+    joint_prob = probability(Y,y)*conditional_probability(X,x,Y,y)
+    return joint_prob
 
+def mutual_information(X,Y):
+    MI = 0
+    for amino_acid1 in amino_acid_list:
+        for amino_acid2 in amino_acid_list:
+            jp = joint_probability(X,amino_acid1,Y,amino_acid2)
+            px = probability(X,amino_acid1)
+            py = probability(Y,amino_acid2)
+            if px*py == 0 or jp == 0:
+                MI += 0
+            else:
+                MI += jp*math.log(jp/(px*py))
+    return MI        
+
+print(mutual_information(position1,position2))

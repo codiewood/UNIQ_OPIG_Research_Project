@@ -1,5 +1,11 @@
 The data we will look at is from Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz, with metadata {'Longitudinal': 'no', 'Chain': 'Heavy', 'Author': 'Collins et al., (2015)', 'Isotype': 'IGHG', 'Age': 'no', 'Size_igblastn': 294985, 'Disease': 'None', 'Link': 'https://dx.doi.org/10.1098/rstb.2014.0236', 'BSource': 'Splenocytes', 'BType': 'Unsorted-B-Cells', 'Subject': 'no', 'Species': 'mouse_C57BL/6', 'Vaccine': 'None', 'Size': 194441}
+
+==================
+
 The CDR-H3 sequence which was most common was {"105": "A", "106": "R", "107": "G", "116": "A", "117": "Y"}, which appeared 957 times.
+
+==================
+
 For position 1, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
     {'Q': 67.04, 'E': 19.69, 'D': 6.89, 'Unused': 6.36, 'H': 0.02, 'V': 0.0}.
     
@@ -410,6 +416,8 @@ For position 127, we see that the amino acids seen and their respective percenta
     
 For position 128, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
     {'S': 73.66, 'A': 25.32, 'T': 0.87, 'L': 0.02, 'Q': 0.01, 'P': 0.12, 'C': 0.01}.
-    
+
+==================
+
 The consensus sequence for this data, including sequence repeats, is:
 {'1': 'Q', '2': 'V', '3': 'Q', '4': 'L', '5': 'Q', '6': 'Q', '7': 'S', '8': 'G', '9': 'A', '10': 'Unused', '11': 'E', '12': 'L', '13': 'V', '14': 'K', '15': 'P', '16': 'G', '17': 'A', '18': 'S', '19': 'V', '20': 'K', '21': 'L', '22': 'S', '23': 'C', '24': 'K', '25': 'A', '26': 'S', '27': 'G', '28': 'Y', '29': 'T', '30': 'F', '31': 'Unused', '32': 'Unused', '34': 'Unused', '35': 'T', '36': 'S', '37': 'Y', '38': 'W', '39': 'M', '40': 'H', '41': 'W', '42': 'V', '43': 'K', '44': 'Q', '45': 'R', '46': 'P', '47': 'G', '48': 'Q', '49': 'G', '50': 'L', '51': 'E', '52': 'W', '53': 'I', '54': 'G', '55': 'R', '56': 'I', '57': 'N', '58': 'P', '59': 'G', '60': 'Unused', '61': 'Unused', '62': 'S', '63': 'G', '64': 'G', '65': 'T', '66': 'N', '67': 'Y', '68': 'N', '69': 'E', '70': 'K', '71': 'F', '72': 'K', '73': 'Unused', '74': 'G', '75': 'K', '76': 'A', '77': 'T', '78': 'L', '79': 'T', '80': 'V', '81': 'D', '82': 'K', '83': 'S', '84': 'S', '85': 'S', '86': 'T', '87': 'A', '88': 'Y', '89': 'M', '90': 'Q', '91': 'L', '92': 'S', '93': 'S', '94': 'L', '95': 'T', '96': 'S', '97': 'E', '98': 'D', '99': 'S', '100': 'A', '101': 'V', '102': 'Y', '103': 'Y', '104': 'C', '105': 'A', '106': 'R', '107': 'G', '108': 'G', '109': 'Y', '110': 'Unused', '111': 'Unused', '111A': 'Unused', '111B': 'Unused', '111C': 'Unused', '111D': 'Unused', '111E': 'Unused', '112': 'Unused', '112A': 'Unused', '112B': 'Unused', '112C': 'Unused', '112D': 'Unused', '112E': 'Unused', '113': 'Unused', '114': 'Y', '115': 'F', '116': 'D', '117': 'Y', '118': 'W', '119': 'G', '120': 'Q', '121': 'G', '122': 'T', '123': 'T', '124': 'V', '125': 'T', '126': 'V', '127': 'S', '128': 'S'}

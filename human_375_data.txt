@@ -1,5 +1,11 @@
 The data we will look at is from Vergani_2017_B18_age-less_than_40_IGHG_B18_age-less_than_40_iglblastn_IGHG.json.gz, with metadata {'Longitudinal': 'no', 'Chain': 'Heavy', 'Author': 'Vergani et al., (2017)', 'Isotype': 'IGHG', 'Age': '<40', 'Size_igblastn': 2348, 'Disease': 'None', 'Link': 'https://www.frontiersin.org/articles/10.3389/fimmu.2017.01157/full', 'Vaccine': 'None', 'BType': 'Unsorted-B-Cells', 'Size': 375, 'Species': 'human', 'BSource': 'PBMC', 'Subject': 'no'}
+
+==================
+
 The CDR-H3 sequence which was most common was {"105": "A", "106": "S", "107": "S", "108": "K", "109": "D", "110": "I", "111": "G", "112": "L", "112A": "E", "113": "W", "114": "Y", "115": "F", "116": "D", "117": "L"}, which appeared 20 times.
+
+==================
+
 For position 1, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
     {'Q': 69.87, 'E': 25.87, 'Unused': 4.27}.
     
@@ -413,6 +419,8 @@ For position 127, we see that the amino acids seen and their respective percenta
     
 For position 128, we see that the amino acids seen and their respective percentage usages, including sequence repeats, are:
     {'S': 98.4, 'P': 1.6}.
-    
+
+==================
+
 The consensus sequence for this data, including sequence repeats, is:
 {'1': 'Q', '2': 'V', '3': 'Q', '4': 'L', '5': 'V', '6': 'E', '7': 'S', '8': 'G', '9': 'A', '11': 'G', '12': 'L', '13': 'V', '14': 'K', '15': 'P', '16': 'G', '17': 'E', '18': 'S', '19': 'L', '20': 'S', '21': 'L', '22': 'S', '23': 'C', '24': 'A', '25': 'A', '26': 'S', '27': 'G', '28': 'G', '29': 'T', '30': 'F', '31': 'Unused', '34': 'Unused', '35': 'S', '36': 'S', '37': 'Y', '38': 'Y', '39': 'W', '40': 'S', '41': 'W', '42': 'V', '43': 'R', '44': 'Q', '45': 'A', '46': 'P', '47': 'G', '48': 'K', '49': 'G', '50': 'L', '51': 'E', '52': 'W', '53': 'I', '54': 'G', '55': 'Y', '56': 'I', '57': 'N', '58': 'H', '59': 'S', '60': 'Unused', '61': 'Unused', '62': 'Unused', '63': 'G', '64': 'S', '65': 'T', '66': 'N', '67': 'Y', '68': 'A', '69': 'P', '70': 'S', '71': 'L', '72': 'K', '74': 'G', '75': 'R', '76': 'V', '77': 'T', '78': 'I', '79': 'S', '80': 'R', '81': 'D', '82': 'T', '83': 'S', '84': 'K', '85': 'N', '86': 'T', '87': 'F', '88': 'Y', '89': 'L', '90': 'K', '91': 'L', '92': 'S', '93': 'S', '94': 'L', '95': 'R', '96': 'A', '97': 'A', '98': 'D', '99': 'T', '100': 'A', '101': 'V', '102': 'Y', '103': 'Y', '104': 'C', '105': 'A', '106': 'R', '107': 'D', '108': 'K', '109': 'G', '110': 'G', '111': 'G', '111A': 'Unused', '111B': 'Unused', '111C': 'Unused', '111D': 'Unused', '111E': 'Unused', '111F': 'Unused', '111G': 'Unused', '112': 'L', '112A': 'Y', '112B': 'Unused', '112C': 'Unused', '112D': 'Unused', '112E': 'Unused', '112F': 'Unused', '112G': 'Unused', '113': 'Y', '114': 'A', '115': 'F', '116': 'D', '117': 'V', '118': 'W', '119': 'G', '120': 'Q', '121': 'G', '122': 'T', '123': 'L', '124': 'V', '125': 'T', '126': 'V', '127': 'S', '128': 'S'}
