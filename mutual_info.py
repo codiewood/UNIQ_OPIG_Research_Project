@@ -4,8 +4,6 @@ from collections import Counter
 oas_file = str(sys.argv[1])
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
 #oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
-position1 = str(sys.argv[2])
-position2 = str(sys.argv[3])
 
 meta_line = True
 sequence_data = []
@@ -117,4 +115,9 @@ def mutual_information(X,Y):
                 MI += jp*math.log(jp/(px*py))
     return MI        
 
-print(mutual_information(position1,position2))
+print("""Using data from {}:
+              """.format(oas_file)) 
+for position1 in position_list:
+    for position2 in position_list:
+        print("""The mutual information of positions {} and {} has value {}.
+              """.format(position1,position2,mutual_information(position1,position2)))
