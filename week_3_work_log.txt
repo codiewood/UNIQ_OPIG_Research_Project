@@ -1,0 +1,17 @@
+Comparing mouse and human data:
+-Took longer than anticipated to get visual representation
+-Suprised by how similar they look ?
+-Used 2 dif data sets of each, larger and smaller (smaller mainly to test
+ code and save time)
+-Picked data sets that matched as closely as possible, only different species
+-Amino acids in key ordered by property (Aliphatic, aromatic, acidic,
+ hyroxilic, basic, sulfur containing, amidic)
+
+	Would like to:
+	-Wanted a more thorough way to show the mouse and human are
+	 different
+	-Considered doing a chi-squared test with the null hypothesis that
+	 there wasn't a difference in the mouse/human underlying distribution
+	 however 1) limited time, wanted to look into other things and 2) the
+	 chi squared test may not be accurate due to possible correlation
+	 between positions.
