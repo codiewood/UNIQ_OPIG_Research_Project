@@ -15,3 +15,14 @@ Comparing mouse and human data:
 	 however 1) limited time, wanted to look into other things and 2) the
 	 chi squared test may not be accurate due to possible correlation
 	 between positions.
+
+Learning about mutual information:
+-Grasped concept via online resources
+-See how could be used to find out potential patterns, as can give positions
+ which are 'linked' to one another in some way [X=position, x=amino acid]
+
+	Would like to:
+	-Write some kind of code to work out mutual information for the
+	 position pairings and then compare to see if same relationships
+	 are present in human ab and in mice ab sequences. Get freq data
+	 into better format then make code to work out. 
