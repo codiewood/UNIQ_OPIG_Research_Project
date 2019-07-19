@@ -87,11 +87,10 @@ def conditional_probability(X,x,Y,y): #prob that X=x given Y=y; X,Y positions an
     both = 0
     for data in sequence_data:
         full_sequence = combine_regions(data)
-        if Y in full_sequence:
-            if full_sequence[Y] == y:
-                condition += 1
-                if full_sequence[X] == x:
-                    both += 1
+        if Y in full_sequence and full_sequence[Y] == y:
+            condition += 1
+            if X in full_sequence and full_sequence[X] == x:
+                both += 1
     if condition == 0:
         cond_prob = 0
     else:
