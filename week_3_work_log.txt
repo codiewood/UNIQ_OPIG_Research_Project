@@ -24,10 +24,13 @@ Learning about mutual information:
  pairings.
 -Looked briefly at concept of entropy (characterises unpredictability of
  a variable)
+-Read paper about use of MI to predict direct residue contact in protein
+ to protein interactions.
 	
 	Would like to:
 	-Figure out a way to quantify which MI values show significant
 	 uncertainty reduction for each data set (threshold?) and then
 	 could make a network of linked positions.
 	-Calculate bound of MI using Shannen (?) entropy
+	-Consider impact of sample size on MI values?
 
