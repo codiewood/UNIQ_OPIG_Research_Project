@@ -22,9 +22,11 @@ Learning about mutual information:
  which are 'linked' to one another in some way [X=position, x=amino acid]
 -Wrote code to work out mutual information for the different position
  pairings.
--Looked briefly at concept of entropy
+-Looked briefly at concept of entropy (characterises unpredictability of
+ a variable)
 	
 	Would like to:
 	-Figure out a way to quantify which MI values show significant
-	 dependence
+	 uncertainty reduction for each data set. Calculate bound of MI
+	 using Shannen (?) entropy
 
