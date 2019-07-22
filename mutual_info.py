@@ -1,9 +1,9 @@
 import gzip, json, re, sys, math, os
 from collections import Counter
 
-oas_file = str(sys.argv[1])
+#oas_file = str(sys.argv[1])
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
-#oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
+oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
 
 meta_line = True
 sequence_data = []
@@ -115,8 +115,13 @@ def mutual_information(X,Y):
     return MI        
 
 print("""Using data from {}:
-              """.format(oas_file)) 
+              """.format(oas_file))
 for position1 in position_list:
     for position2 in position_list:
-        print("""The mutual information of positions {} and {} has value {}.
-              """.format(position1,position2,mutual_information(position1,position2)))
+        MI = mutual_information(position1,position2)
+        if position1 == position2:
+            print("""The self information of position {} has value {}.
+              """.format(position1,MI))
+        else:
+            print("""The mutual information of positions {} and {} has value {}.
+              """.format(position1,position2,MI))
