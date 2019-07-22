@@ -15,13 +15,15 @@ Comparing mouse and human data:
 	 however 1) limited time, wanted to look into other things and 2) the
 	 chi squared test may not be accurate due to possible correlation
 	 between positions.
+	-Make my script better / more easily useable; for example importing
+	 within script, recode to make output better for use as data
 
 Learning about mutual information:
 -Grasped concept via online resources
 -See how could be used to find out potential patterns, as can give positions
  which are 'linked' to one another in some way [X=position, x=amino acid]
 -Wrote code to work out mutual information for the different position
- pairings.
+ pairings. Code take very long to run.
 -Looked briefly at concept of entropy (characterises unpredictability of
  a variable)
 -Read paper about use of MI to predict direct residue contact in protein
@@ -33,4 +35,16 @@ Learning about mutual information:
 	 could make a network of linked positions.
 	-Calculate bound of MI using Shannen (?) entropy
 	-Consider impact of sample size on MI values?
+	-Optimise my code better
 
+Learning about Random Forest:
+-Read some papers on RF in bioinformatics and some course notes about
+ Decision Trees and RF and how they work
+-Looked briefly into one class random forest
+-Looked at proximity scoring and VIMs
+
+	Would like to:
+	-Look into different computational methods of using RF
+	-Look in more depth at OCRF
+	-Start using RF on some data to begin figuring out what makes a
+	 sequence human or not human.
