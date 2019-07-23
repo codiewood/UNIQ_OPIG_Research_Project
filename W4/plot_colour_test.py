@@ -7,8 +7,7 @@ Created on Tue Jul 23 11:19:43 2019
 """
 
 import pandas as pd
-import matplotlib as plt
-from matplotlib import cm
+import matplotlib.pyplot as plt
 import numpy as np
 
 r = [0,1,2,3]

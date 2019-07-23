@@ -3,7 +3,7 @@
 
 # In[2]:
 
-import gzip, json, re, sys
+import gzip, json, re, sys, os
 from collections import Counter
 import pandas as pd
 import matplotlib as plt
@@ -12,7 +12,7 @@ import numpy as np
 
 #oas_file = str(sys.argv[1])
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
-#oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
+oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
 
 meta_line = True
 sequence_data = []
@@ -97,9 +97,9 @@ for region_name in regions:
                 raw_data[amino_acid].append(0)
   
     df = pd.DataFrame(raw_data)
-    aa_colours = plt.cm.rainbow(np.linspace(0, 1, 20))
+    colours = plt.cm.rainbow(np.linspace(0, 1, 21))
         
-    sbc = df.plot.bar(stacked = True, color = aa_colours, title = str(metadata['Author'] + " " + metadata['Species'] + ' ' + region_name))
+    sbc = df.plot.bar(stacked = True, color = colours, title = str(metadata['Author'] + " " + metadata['Species'] + ' ' + region_name))
     sbc.set(xlabel="Position", ylabel="Frequency",
             xticklabels=region_position_list)
     sbc.legend(loc='center right', bbox_to_anchor=(-0.2, 0.5))
