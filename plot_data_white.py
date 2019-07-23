@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 #%%
@@ -9,9 +9,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-#oas_file = str(sys.argv[1])
+oas_file = str(sys.argv[1])
 #oas_file = "Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz"
-oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
+#oas_file = "Corcoran_2016_heavy_mouse_IGHG_mouse_heavy_M2_igblastn_igblastn_IGHG.json.gz"
 
 meta_line = True
 sequence_data = []
@@ -44,7 +44,7 @@ def sort_alphanumerically(l):
     
 #%%
 
-redundant_sequences = metadata['Size']
+unique_sequences = len(sequence_data)
 regions = ['fwh1','cdrh1','fwh2','cdrh2','fwh3','cdrh3','fwh4']
 amino_acid_list = ['A','G','I','L','P','V','F','W','Y','D','E','S','T','R','H','K','C','M','N','Q','Unused']
 
@@ -58,11 +58,10 @@ for region_name in regions:
         amino_acids = []
         for data in sequence_data:
             region_sequence = find_region_sequence(data)
-            for i in range(int(data['redundancy'])):
-                if position in region_sequence:
-                    amino_acids.append(region_sequence[position])
-                else:
-                    amino_acids.append('Unused')
+            if position in region_sequence:
+                amino_acids.append(region_sequence[position])
+            else:
+                amino_acids.append('Unused')
         return amino_acids
     
     def generate_positions():
@@ -81,7 +80,7 @@ for region_name in regions:
         amino_acids = find_amino_acids(position)
         amino_acid_count = Counter(amino_acids)
         for amino_acid in amino_acid_count:
-            frequency = (100*amino_acid_count[amino_acid])/redundant_sequences
+            frequency = (100*amino_acid_count[amino_acid])/unique_sequences
             amino_acid_count[amino_acid] = round(frequency,2)
         amino_acid_frequency = dict(amino_acid_count)
         return amino_acid_frequency
@@ -98,11 +97,11 @@ for region_name in regions:
   
     df = pd.DataFrame(raw_data)
     colours = plt.cm.rainbow(np.linspace(0, 1, 21))
-    colours[-1] = (1,1,1,1)
+    colours[-1] = (0.95,0.95,0.95,1)
     
     species = str(metadata['Species']).replace('/','')
     
-    sbc = df.plot.bar(stacked = True, color = colours, edgecolor = 'k',
+    sbc = df.plot.bar(stacked = True, color = colours,
                       title = str(metadata['Author'] + " " + metadata['Species']
                       + ' ' + region_name))
     sbc.set(xlabel="Position", ylabel="Frequency",
