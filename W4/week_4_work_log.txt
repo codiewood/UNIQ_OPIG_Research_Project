@@ -1,0 +1,26 @@
+General code stuff:
+-Changed 'Unused' to light grey  bars for aesthetics.
+-With this introduction can see that some data is likely incomplete, with 
+ unused position decreasing from 1 to 20.
+-Tweaked code slightly so now only for non redundant data.
+-Made code object oriented to allow easier use across dif files/scripts and
+ translated this onto all still in use python scripts.
+-Introduced a threshold variable  for the number of times a position should
+ show up before being considered.
+
+	Issues/Notes:
+	-Not sure what to do about 'unused' positions in terms of my mutual
+	 information script. If position is unused then doesn't show up in
+	 the data, which means probabilities cant be properly calculated.
+		-Think have fixed by use of if loops for unused case.
+	-MI code wont work out any mutual info for positions that just dont
+	 ever show in data set (eg position 10 for human data) but don't think
+	 this is a large issue as if the position is never there, wont be
+	 able to gain any info from it anyway.
+	-Unsure what an appropriate threshold value would be. Tried 20 but
+	 didn't seem to make much difference. Noted that position 10 still
+	 shows up for Collins mouse data. Upon further investigation,
+	 noted that this position shows up 56 times (likely due to error?
+	 as this data has approx 31.7% of its sequences suspected to contain
+	 at least 1 error and position 10 is only supposed to be present in
+	 certain non-human species)

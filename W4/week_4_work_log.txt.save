@@ -1,0 +1,17 @@
+General code stuff:
+-Changed 'Unused' to light grey  bars for aesthetics.
+-Tweaked code slightly so now only for non redundant data.
+-Made code object oriented to allow easier use across dif files/scripts and
+ translated this onto all still in use python scripts.
+-Introduced a threshold variable  for the number of times a position should show up
+ before being considered.
+
+	Issues/Notes:
+	-Not sure what to do about 'unused' positions in terms of my mutual
+	 information script. If position is unused then doesn't show up in
+	 the data, which means probabilities cant be properly calculated.
+		-Think have fixed but use of if loops for unused case
+	-MI code wont work out any mutual info for positions that just dont
+	 ever show in data set (eg position 10) but don't think this is a 
+	 large issue as if the position is never there, wont be able to 
+	 gain any info from it anyway.
