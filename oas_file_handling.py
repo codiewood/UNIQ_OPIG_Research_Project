@@ -126,14 +126,17 @@ class oas_file():
                 amino_acids.append('Unused')
         return amino_acids
         
-    def amino_acid_frequency(self, position):
+    def amino_acid_occurences(self, position):
         amino_acids = self.find_amino_acids(position)
-        amino_acid_count = Counter(amino_acids)
+        amino_acid_count = dict(Counter(amino_acids))
+        return amino_acid_count
+
+    def amino_acid_frequency(self, position):
+        amino_acid_count = f.amino_acid_occurences(position)
         for amino_acid in amino_acid_count:
             frequency = (100*amino_acid_count[amino_acid])/self.unique_sequences
             amino_acid_count[amino_acid] = round(frequency,2)
-        amino_acid_frequency = dict(amino_acid_count)
-        return amino_acid_frequency
+        return amino_acid_count
     
     def print_frequencies(self, threshold=1):
         freq_dict = {}
