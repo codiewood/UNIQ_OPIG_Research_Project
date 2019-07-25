@@ -44,7 +44,7 @@ for region_name in f.regions:
     if threshold > 1:
         sbc.get_figure().savefig('{}.pdf'.format(str(page) + "_" + species + "_"
                                  + str(f.metadata['Size']) + "_" + region_name
-                                 + "_treshold" + str(threshold) + "_plot"), bbox_inches="tight")
+                                 + "_treshold_" + str(threshold) + "_plot"), bbox_inches="tight")
     else:
         sbc.get_figure().savefig('{}.pdf'.format(str(page) + "_" + species + "_"
                                  + str(f.metadata['Size']) + "_" + region_name
