@@ -14,7 +14,7 @@ General code stuff:
 	 the data, which means probabilities cant be properly calculated.
 		-Think have fixed by use of if loops for unused case. But
 		 unsure as to if this sol is best or if should just discount
-		 unused, as unsue which unused are due to sequencing.
+		 unused, as unsure which unused are due to sequencing.
 	-MI code wont work out any mutual info for positions that just dont
 	 ever show in data set (eg position 10 for human data) but don't think
 	 this is a large issue as if the position is never there, wont be
@@ -25,5 +25,48 @@ General code stuff:
 	 noted that this position shows up 56 times (likely due to error?
 	 as this data has approx 31.7% of its sequences suspected to contain
 	 at least 1 error and position 10 is only supposed to be present in
-	 certain non-human species). ALso tried threshold 60.
+	 certain non-human species). Also tried threshold 60.
+	
+	Would like to:
+	-Suggestion from Alex to look at specific families (by IMGT gene
+	 annotation) to make my analysis cleaner.
 
+Mutual Info:
+-Found python package with mutual info built in (sklearn.stats) and have
+ caluclated normalized MI values for each position pair in human data
+ with a position use threshold of 20.
+-Chose to calculate normalized mutual information soi that ther was more
+ obvious scaling of the value and can more easily tell what values were
+ 'high' and which 'low'.
+
+Stats tests:
+-Found python code for Chi2 and Spearmans rank tests (scipy) and have run
+ for each position that occurs in both the mouse and the human data sets
+ to see if they are sig dif in the proportions and ranks of amino acids
+ at each position.
+
+	Issues/Notes:
+	-Not sure that chi2 test is appropriate, as some freq have very small
+	 values (below 5) which isn't advised to use for chi2
+	-Seems to report sig dif for very slight changes so not very good as
+	 a measure.
+	-Similar issue with Spearman's rank, always reports a monotonic assoc
+
+	Would like to:
+	-Look at K-L divergence as a measure of difference between the mouse
+	 and human data sets.
+
+Random forest:
+-Ran random forest on CDRH3 sequences of length 15 - managed to get fairly
+ accurate predictions (all accuracy values >0.9)
+-Choice to use 10 trees initially was quite arbitrary - was planning on starting
+ small and increasing until good accuracy but seems that small works. With 20 got
+ some accuracy values of 1.
+-Also looked at the feature importance of each position - noted that position
+ 117 was always the highested valued at around 0.12 - 0.22 and usually much
+ higher than any other positions.
+	
+	Would like to:
+	-Repeat with some other length CDRH3
+	-Try with all of the CDRH3 sequences
+	-Try some dif numbers of trees
