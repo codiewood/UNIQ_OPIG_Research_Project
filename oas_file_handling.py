@@ -3,6 +3,7 @@
 
 import gzip, json, re
 from collections import Counter
+from sklearn import metrics
 
 def maximum_valued_key(dictionary):
     values = list(dictionary.values())
@@ -117,6 +118,13 @@ class oas_file():
         all_positions_list = sort_alphanumerically(list(all_positions))
         return all_positions_list
     
+    def position_use_count(self, position, region_name):
+        position_use_count = 0
+        for data in self.region_sequences(region_name):
+            if position in data:
+                position_use_count += 1
+        return position_use_count
+    
     def find_amino_acids(self, position):
         amino_acids = []
         for data in self.sequence_data:
@@ -132,7 +140,7 @@ class oas_file():
         return amino_acid_count
 
     def amino_acid_frequency(self, position):
-        amino_acid_count = f.amino_acid_occurences(position)
+        amino_acid_count = self.amino_acid_occurences(position)
         for amino_acid in amino_acid_count:
             frequency = (100*amino_acid_count[amino_acid])/self.unique_sequences
             amino_acid_count[amino_acid] = round(frequency,2)
@@ -150,5 +158,72 @@ class oas_file():
             consensus_sequence[position] = maximum_valued_key(self.amino_acid_frequency(position))
         print("""The consensus sequence for this data, including sequence repeats, is:
             {}""".format(consensus_sequence))
+            
+    def data_row(self,position):
+        amino_acid_list = self.amino_acids
+        row = []
+        for amino_acid in amino_acid_list:
+            amino_acid_count = self.amino_acid_occurences(position)
+            if amino_acid in amino_acid_count:
+                row.append(amino_acid_count[amino_acid])
+            else:
+                row.append(0)
+        return row
+    
+    def mutual_information(self, position1, position2, normalized=True):
+        labels_position1 = self.data_row(position1)
+        labels_position2 = self.data_row(position2)
+        if normalized == True:
+            MI = metrics.normalized_mutual_info_score(labels_position1, labels_position2)
+        else:
+            MI = metrics.mutual_info_score(labels_position1, labels_position2)
+        return MI
+
+class cdrh3_data(oas_file):
+    def __init__(self, src, length):
+        super(cdrh3_data, self).__init__(src)
+        cdrh3_sequences = self.region_sequences('cdrh3')
+        cdrh3_same_length = []
+        for cdrh3 in cdrh3_sequences:
+            if len(cdrh3) == length:
+                cdrh3_same_length.append(cdrh3)
+        self.sequences = cdrh3_same_length
+        self.length = length
+        self.number = len(self.sequences)
+    
+    def find_cdrh3_amino_acids(self,position):
+        amino_acids = []
+        for cdrh3 in self.sequences:
+            if position in cdrh3:
+                amino_acids.append(cdrh3[position])
+            else:
+                amino_acids.append('Unused')
+        return amino_acids
+        
+    def cdrh3_amino_acid_occurences(self, position):
+        amino_acids = self.find_cdrh3_amino_acids(position)
+        amino_acid_count = dict(Counter(amino_acids))
+        return amino_acid_count
+    
+    def cdrh3_amino_acid_frequency(self, position):
+        amino_acid_count = self.cdrh3_amino_acid_occurences(position)
+        for amino_acid in amino_acid_count:
+            frequency = (100*amino_acid_count[amino_acid])/self.number
+            amino_acid_count[amino_acid] = round(frequency,2)
+        return amino_acid_count
+    
+    def cdrh3_position_use_count(self, position):
+        position_use_count = 0
+        for cdrh3 in self.sequences:
+            if position in cdrh3:
+                position_use_count += 1
+        return position_use_count
+    
+    def cdrh3_positions_used(self):
+        positions_used = []
+        for position in self.region_positions('cdrh3'):
+                if self.cdrh3_position_use_count(position) >= 1:
+                    positions_used.append(position)
+        return positions_used
             
             
