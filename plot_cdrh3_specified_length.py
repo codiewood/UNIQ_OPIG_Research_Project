@@ -6,11 +6,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-if len(sys.argv) > 2:
-    length = int(sys.argv[2])
-else:
-    length = 15
-f = oas.cdrh3_data(str(sys.argv[1]), length)
+length = 13
+f = oas.cdrh3_data("Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz", length)
 
 plot_data = {}
 for amino_acid in f.amino_acids:

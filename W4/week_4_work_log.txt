@@ -65,6 +65,11 @@ Random forest:
 -Also looked at the feature importance of each position - noted that position
  117 was always the highested valued at around 0.12 - 0.22 and usually much
  higher than any other positions.
+
+	Issues/Notes:
+	-Looked at 117 in more detail and not entirely sure as to why the
+	 importance occurs. Seems to have quite high MI (>0.9) with other
+	 early positions. Not obvious difference from freq graphs.
 	
 	Would like to:
 	-Repeat with some other length CDRH3

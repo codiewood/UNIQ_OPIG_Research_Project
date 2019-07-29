@@ -3,14 +3,14 @@
 
 import oas_file_handling as oas
 from sklearn.ensemble import RandomForestClassifier
-import numpy as np
 from sklearn.model_selection import train_test_split
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn import metrics
+import matplotlib.pyplot as plt
+import numpy as np
 
 #%%
-length = 15
+length = 13
 trees = 10
 
 human = oas.cdrh3_data('Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz', length)
@@ -59,6 +59,9 @@ print("Accuracy:",metrics.accuracy_score(test_labs, predicted_labs))
 
 position_importance = pd.Series(RF.feature_importances_,index=human.cdrh3_positions_used())
 print(position_importance)
+
+colours = plt.cm.rainbow(np.linspace(0, 1, 21))
+colours[-1] = (0.95,0.95,0.95,1)
 
 bc = position_importance.plot.bar(color = colours, title = "Importance of positions")
 bc.set(ylabel = 'Feature Importance Score', xlabel='Position')
