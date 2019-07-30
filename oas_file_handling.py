@@ -170,11 +170,13 @@ class oas_file():
                 row.append(0)
         return row
     
-    def mutual_information(self, position1, position2, normalized=True):
+    def mutual_information(self, position1, position2, normalized=False, adjusted=False):
         labels_position1 = self.data_row(position1)
         labels_position2 = self.data_row(position2)
         if normalized == True:
             MI = metrics.normalized_mutual_info_score(labels_position1, labels_position2)
+        elif adjusted == True:
+            MI = metrics.adjusted_mutual_info_score(labels_position1, labels_position2)
         else:
             MI = metrics.mutual_info_score(labels_position1, labels_position2)
         return MI
