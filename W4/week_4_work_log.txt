@@ -69,7 +69,8 @@ Random forest:
 	Issues/Notes:
 	-Looked at 117 in more detail and not entirely sure as to why the
 	 importance occurs. Seems to have quite high MI (>0.9) with other
-	 early positions. Not obvious difference from freq graphs.
+	 early positions. Also, has lots of 1 values with other positions
+	 in CDRH3. Not obvious difference from freq graphs.
 	
 	Would like to:
 	-Repeat with some other length CDRH3
