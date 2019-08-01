@@ -20,6 +20,11 @@ all_data = [human, mouse]
 
 #%% Machine learning
 
+if len(human.region_positions('cdrh3')) >= len(mouse.region_positions('cdrh3')):
+    positions = human.region_positions('cdrh3')
+else:
+    positions = mouse.region_positions('cdrh3')
+
 raw_data = {'Species': []}
 for data in all_data:
     for k in range(data.number):
@@ -27,20 +32,30 @@ for data in all_data:
             raw_data['Species'].append(1)
         else:
             raw_data['Species'].append(0)
-    for position in data.cdrh3_positions_used():
-        key = 'Position '+ position
-        for cdrh3 in data.sequences:
-            if key not in raw_data:
-                raw_data[key] = [cdrh3[position]]
-            else:
-                raw_data[key].append(cdrh3[position])
+    for position in positions:
+        for amino_acid in data.amino_acids:
+            key = 'Position: '+ position +' AA: ' + amino_acid
+            for cdrh3 in data.non_redundant:
+                if key not in raw_data:
+                    if position not in cdrh3:
+                        if amino_acid == 'Unused':
+                            raw_data[key] = [1]
+                    elif cdrh3[position] == amino_acid:
+                        raw_data[key] = [1]
+                    else:
+                        raw_data[key] = [0]
+                else:
+                    if position not in cdrh3:
+                        if amino_acid == 'Unused':
+                                raw_data[key].append(1)
+                    elif cdrh3[position] == amino_acid:
+                        raw_data[key].append(1)
+                    else:
+                        raw_data[key].append(0)
 
 df = pd.DataFrame(raw_data)
 
-for i, amino_acid in enumerate(human.amino_acids):
-    df = df.replace(amino_acid,i)
-
-attributes = df.iloc[:, 1:16].values
+attributes = df.iloc[:, 1:].values
 labels = df.iloc[:, 0].values
 
 training_attr, test_attr, training_labs, test_labs = train_test_split(attributes, labels, test_size=0.2, random_state=0)
@@ -57,11 +72,6 @@ RF.fit(training_attr, training_labs)
 predicted_labs = RF.predict(test_attr)
 print("Accuracy:",metrics.accuracy_score(test_labs, predicted_labs))
 
-position_importance = pd.Series(RF.feature_importances_,index=human.cdrh3_positions_used())
+position_importance = pd.Series(RF.feature_importances_)
 print(position_importance)
 
-colours = plt.cm.rainbow(np.linspace(0, 1, 21))
-colours[-1] = (0.95,0.95,0.95,1)
-
-bc = position_importance.plot.bar(color = colours, title = "Importance of positions")
-bc.set(ylabel = 'Feature Importance Score', xlabel='Position')

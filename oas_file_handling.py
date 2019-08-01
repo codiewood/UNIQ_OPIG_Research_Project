@@ -191,11 +191,14 @@ class cdrh3_data(oas_file):
                 cdrh3_same_length.append(cdrh3)
         self.sequences = cdrh3_same_length
         self.length = length
-        self.number = len(self.sequences)
+        self.redundant = len(self.sequences)
+        self.non_redundant = [dict(t) for t in {tuple(seq.items()) for seq in self.sequences}]
+        self.number = len(self.non_redundant)
+        
     
     def find_cdrh3_amino_acids(self,position):
         amino_acids = []
-        for cdrh3 in self.sequences:
+        for cdrh3 in self.non_redundant:
             if position in cdrh3:
                 amino_acids.append(cdrh3[position])
             else:
@@ -216,7 +219,7 @@ class cdrh3_data(oas_file):
     
     def cdrh3_position_use_count(self, position):
         position_use_count = 0
-        for cdrh3 in self.sequences:
+        for cdrh3 in self.non_redundant:
             if position in cdrh3:
                 position_use_count += 1
         return position_use_count

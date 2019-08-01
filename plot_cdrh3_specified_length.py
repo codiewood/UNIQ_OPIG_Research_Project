@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 length = 13
-f = oas.cdrh3_data("Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz", length)
+f = oas.cdrh3_data("Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz", length)
 
 plot_data = {}
 for amino_acid in f.amino_acids:
