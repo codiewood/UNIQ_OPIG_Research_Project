@@ -39,6 +39,17 @@ class oas_file():
             self.regions = ['fwl1','cdrl1','fwl2','cdrl2','fwl3','cdrl3','fwl4']
         self.amino_acids = ['A','G','I','L','P','V','F','W','Y','D','E','S','T','R','H','K','C','M','N','Q','Unused']
         self.file_name = src
+        gene_annotations = set()
+        for seq in self.sequence_data:
+            gene_annotations.add(seq['v'])
+        self.gene_annotations = list(gene_annotations)
+        fams = set()
+        for text in self.gene_annotations:
+            fam = text.partition("-")[0]
+            if 'S' in fam:
+                fam = fam.partition("S")[0]
+            fams.add(fam)
+        self.families = list(fams)
     
     def error_counts(self):
         max_errors = 0
@@ -62,6 +73,16 @@ class oas_file():
                     i_errors += 1
             print("{} sequences are thought to contain {} errors."
                   .format(i_errors,i))            
+    
+    def family_sequences(self, family):
+        family_sequences = []
+        for data in self.sequence_data:
+            data_family = data['v'].partition("-")[0]
+            if 'S' in data_family:
+                data_family = data_family.partition("S")[0]
+            if data_family == family:
+                family_sequences.append(data)
+        return family_sequences
     
     def region_sequences(self,region_name):
         region_sequences = []
@@ -180,6 +201,7 @@ class oas_file():
         else:
             MI = metrics.mutual_info_score(labels_position1, labels_position2)
         return MI
+    
 
 class cdrh3_data(oas_file):
     def __init__(self, src, length):
@@ -193,8 +215,7 @@ class cdrh3_data(oas_file):
         self.length = length
         self.redundant = len(self.sequences)
         self.non_redundant = [dict(t) for t in {tuple(seq.items()) for seq in self.sequences}]
-        self.number = len(self.non_redundant)
-        
+        self.number = len(self.non_redundant)        
     
     def find_cdrh3_amino_acids(self,position):
         amino_acids = []
@@ -230,5 +251,7 @@ class cdrh3_data(oas_file):
                 if self.cdrh3_position_use_count(position) >= 1:
                     positions_used.append(position)
         return positions_used
+    
+    
             
             
