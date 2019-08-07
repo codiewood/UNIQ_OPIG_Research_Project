@@ -10,20 +10,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #%%
-length = 13
+length = 15
 trees = 10
 
 human = oas.cdrh3_data('Vander_Heiden_2017_Heavy_HD09_IGHG_HD09_Unsorted_Bcells_age31_healthy_iglblastn_igblastn_IGHG.json.gz', length)
 mouse = oas.cdrh3_data('Collins_2015_IGHG_Mouse_sample_2_iglblastn_igblastn_IGHG.json.gz', length)
+family = False
 
 all_data = [human, mouse]
 
 #%% Machine learning
 
-if len(human.region_positions('cdrh3')) >= len(mouse.region_positions('cdrh3')):
-    positions = human.region_positions('cdrh3')
+if len(human.cdrh3_positions_used()) >= len(mouse.cdrh3_positions_used()):
+    positions = human.cdrh3_positions_used()
 else:
-    positions = mouse.region_positions('cdrh3')
+    positions = mouse.cdrh3_positions_used()
 
 raw_data = {'Species': []}
 for data in all_data:
@@ -54,7 +55,6 @@ for data in all_data:
                         raw_data[key].append(0)
 
 df = pd.DataFrame(raw_data)
-
 attributes = df.iloc[:, 1:].values
 labels = df.iloc[:, 0].values
 
@@ -73,5 +73,6 @@ predicted_labs = RF.predict(test_attr)
 print("Accuracy:",metrics.accuracy_score(test_labs, predicted_labs))
 
 position_importance = pd.Series(RF.feature_importances_)
-print(position_importance)
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+    print(position_importance)
 
